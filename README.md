@@ -4,7 +4,7 @@ Using it in PowerShell
 ===
 
 The following example shows the usage of Invoke-Translate. Here, every vowel in a string is replaced by its vowel position.
-```
+```powershell
 $InputTable = "aeiou"            
 $OutputTable = "12345"            
 $TranslationTable = New-TranslationTable $InputTable $OutputTable            
