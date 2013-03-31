@@ -24,13 +24,13 @@ function New-TranslationTable {
     #>
     param(
         # This is the string having actual characters.
-        [string]$InputTable,
+        $InputTable,
         # This is the string having corresponding mapping character.
-        [string]$OutputTable
+        $OutputTable
     )
 
     $count = $InputTable.Length
-    $h = @{}
+    $h = New-Object "System.Collections.Generic.Dictionary``2[System.String,System.String]"
     for($idx=0; $idx -lt $count; $idx+=1) {
         $h[$InputTable[$idx]]=$OutputTable[$idx]
     }
