@@ -17,7 +17,7 @@ th3s 3s str3ng 2x1mpl2....w4w!!!
 ```
 
 This example deletes all 'x' and 'm' characters from the string before doing the translate.
-```
+```powershell
 $InputTable = "aeiou"            
 $OutputTable = "12345"            
 $TranslationTable = New-TranslationTable $InputTable $OutputTable            
